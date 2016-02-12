@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>If you ever need...&lt;3 </title>
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/style1.css" />	
+</head>
+
+<body class="demo-1">
+  <audio id="song" autoplay>
+   <source src="m1.mp3" type='audio/mpeg; codecs="mp3"'>
+  </audio>
+	<div class="image-preload">
+		<img src="img/weather/texture-rain-fg.png" />
+		<img src="img/weather/texture-rain-bg.png" />
+		<img src="img/weather/texture-drizzle-fg.png" />
+		<img src="img/weather/texture-drizzle-bg.png" />
+	</div>
+	<div class="container">
+
+		<div class="slideshow">
+			<canvas width="1" height="1" id="container" style="position:absolute"></canvas>
+			<!-- Heavy Rain -->
+			<div class="slide" id="slide-1" data-weather="rain"></div>
+			<!-- Drizzle -->
+			<div class="slide" id="slide-2" data-weather="drizzle"></div>
+			<nav class="slideshow__nav">
+				<a class="nav-item" href="#slide-1"><i class="icon icon--drizzle"></i></a>
+				<a class="nav-item" href="#slide-2"><i class="icon icon--rainy"></i></a>
+			</nav>
+		</div>
+		<p class="nosupport">Sorry, but your browser does not support WebGL!</p>
+	</div>
+	<!-- /container -->
+	<script src="js/index.js"></script>
+	<script src="js/cursor.js"></script>
+</body>
+
+</html>
